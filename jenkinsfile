@@ -13,7 +13,7 @@ pipeline{
     }
     stage('terraform apply'){
       steps{
-        sh returnStatus: true, script: 'terraform apply -var='
+        sh returnStatus: true, script: 'terraform apply -var="name=instanceU10"
       }
     }
   }
