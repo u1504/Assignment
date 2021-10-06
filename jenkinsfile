@@ -6,7 +6,6 @@ pipeline{
         sh "terraform init"
       }
     }
-   stages{
     stage('terraform plan'){
       steps{
         sh "terraform plan"
@@ -18,4 +17,3 @@ pipeline{
       }
     }
   }
-}
