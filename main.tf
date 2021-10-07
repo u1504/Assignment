@@ -7,7 +7,7 @@ provider "aws" {
 # The name is used to refer to this resource from elsewhere in the same Terraform module,
 # but has no significance outside that module's scope.
 resource "aws_instance" "myec2" {
-  name          ="instanceU10"
+  name          =var.instance_name
   ami           = "ami-5b41123e"
   instance_type = "t2.micro"
 }
